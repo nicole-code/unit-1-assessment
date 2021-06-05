@@ -1,0 +1,18 @@
+#content, #here {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;   
+}
+
+input {
+    width: 3em;
+}
+
+#decrement, #increment {
+
+}
+
+button:hover {
+    background-color: pink;
+}

@@ -1,28 +1,21 @@
-//cached things
 
 let btnPlus = document.getElementById("increment") 
-let btnMinus = document.getElementById("decrement")
-
-//event listeners
-
+let btnMinus = document.getElementById("decrement") 
+let theCounter = document.getElementById("initialCount")
+let theInput = document.getElementById("inputValue")
+let counting = 0; 
 
 btnPlus.addEventListener("click", btnPlusClick ) 
 btnMinus.addEventListener("click", btnMinusClick)
 
-//functions
-
 function btnPlusClick () {
-    let count = inputValue.value;
-    let theInput = 0
-    console.log(count)
-
+    let numValue = parseInt(theInput.value);
+    counting = numValue + counting 
+    theCounter.innerText = counting   
 }
 
 function btnMinusClick () {
-    let count = inputValue.value;
-    let theInput = 0;
-    console.log(count)
-    
-    theInput --
-    inputValue.innterText = 
+    let numValue = parseInt(theInput.value);
+    counting = counting - numValue  
+    theCounter.innerText = counting 
 }
